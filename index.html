@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 	<title>Marcel Seuga</title>
 
@@ -38,7 +38,7 @@
 
 				<div class="left-column">
 					<img id="profile_pic" src="images/Marcel.jpg">
-					<h5 style="text-align:center; line-height:0">Personnalize Theme</h5>
+					<h5 style="text-align:center; line-height:0">Personalize Theme</h5>
 					<div id="theme-options-wrapper">
 						<div data-mode="light" id="light-mode" class="theme-dot"></div>
 						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
@@ -46,7 +46,7 @@
 						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 					</div>
 
-					<p id="settings-note">*Theme settings will be saved for<br>your next visit(click on a theme to choose it!)</p>
+					<p id="settings-note">*(click on a theme to choose it!)<br></p>
 				</div>
 
 				<div class="right-column">
@@ -73,30 +73,39 @@
 				<div class="about-me">
 					<h4>More about me</h4>
 
-					<p>Cet accord, d'une durée de cinq ans, favorisera la poursuite et le développement</p>
-
-					<p>Le professeur de droit Pierre Rainville est l'un des huit cotitulaires</p>
+					<p>
+						As a passionate tech enthusiast, I find learning opportunities in every aspect of life.
+						My love for Physics sparked during high school, and in college, my passion for Mathematics grew.
+						However, as someone who seeks challenges with an open mind, I found my true calling in Computer Science.
+						I realized the potential to make a tangible impact on people's lives through this discipline, thanks to its accessible infrastructure.
+					</p>
+					<p>
+						My programming journey began with Pascal and then progressed to C, which refreshed my perspective and deepened my understanding of computer systems and memory management.
+						I later ventured into object-oriented programming, exploring both Java and C++.
+						Eventually, I chose to focus on Java due to its "Write Once Run Everywhere" philosophy and efficient garbage collection.
+						:)
+					</p>
 				
 
 				<hr>
 
 				<h4>TOP EXPERTISE</h4>
 
-				<p>ETL Developper with primary focus on Java + 
-				React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+				<p>Recent graduate(Fall 2022) with good foundations in distributed systems, algorithms &
+				AI: <a target="_blank" href="resume.pdf">Download Resume</a></p>
 
 					<div id="skills">
 						<ul>
 							<li>Java</li>
 							<li>Python</li>
-							<li>Django</li>
-							<li>React</li>
+							<li>C</li>
+							<li>Spring Boot</li>
 						</ul>
 
 						<ul>
 							<li>HTML/CSS</li>
 							<li>C++</li>
-							<li>Kubernetes</li>
+							<li>Docker</li>
 							<li>PHP</li>
 						</ul>
 					</div>
@@ -117,7 +126,7 @@
 	<section class="s1">
 		<div class="main-container">
 
-			<h3 style="text-align: center;">Some of my past projects</h3>
+			<a href="/post.html"><h3 style="text-align: center;">Some of my past projects</h3></a>
 
 			<div class="post-wrapper">
 
@@ -162,15 +171,16 @@
 		<div class="main-container">
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="https://formsubmit.co/seugayouri@gmail.com" method="POST">
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
+				<input class="input-field" type="text" name="name" required>
 
 				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input class="input-field" type="text" name="subject" required>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input class="input-field" type="email" name="email" required>
+				<input type="hidden" name="_next" value="https://yourisev.github.io/portfolio-website/thankyou.html">
 
 				<label>Message</label>
 				<textarea class="input-field" name="message"></textarea>
